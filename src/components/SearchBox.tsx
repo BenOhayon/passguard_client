@@ -26,7 +26,7 @@ const SearchInput = styled('input')(() => ({
     outline: 'none',
     backgroundColor: '#ffffff00',
     color: 'hsla(0, 0%, 100%, .6)',
-    transition: 'all 300ms ease-out',
+    transition: 'all 200ms ease-out',
     '::placeholder': {
         color: 'hsla(0, 0%, 100%, .6)'
     },

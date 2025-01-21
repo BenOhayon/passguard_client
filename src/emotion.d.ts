@@ -9,6 +9,9 @@ declare module "@emotion/react" {
             mobile: string;
             tablet: string;
             desktop: string;
+        },
+        sizes: {
+            topBar: string;
         }
     }
 }

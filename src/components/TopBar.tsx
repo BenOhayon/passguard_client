@@ -3,18 +3,14 @@ import styled from "@emotion/styled"
 import SearchBox from './SearchBox'
 
 const Container = styled('div')(({ theme }) => ({
-    width: '100vw',
-    height: '60px',
+    width: '100%',
+    height: theme.sizes.topBar,
     boxSizing: 'border-box',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     gap: '10px',
     backgroundColor: theme.colors.primary,
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
     padding: '10px 20px'
 }))
 
@@ -32,7 +28,6 @@ const LeftContainer = styled('div')(() => ({
 }))
 
 const TopBar: React.FunctionComponent = () => {
-
     const [searchQuery, setSearchQuery] = useState('')
 
     return (
@@ -44,7 +39,7 @@ const TopBar: React.FunctionComponent = () => {
                     onSearchChange={setSearchQuery}
                 />
             </LeftContainer>
-            <div>Account</div>
+            <div></div>
         </Container>
     )
 }
